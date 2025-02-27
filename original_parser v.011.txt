@@ -85,7 +85,6 @@ def parse_book_data(book_url):
         publisher = None
         year = None
         cover_url = None
-        category = None
 
         char_blocks = soup.find_all('div', class_='char')
 
@@ -112,50 +111,16 @@ def parse_book_data(book_url):
             if img:
                 cover_url = img.get('src')
 
-        # Витягуємо категорію
-        category_element = soup.select_one("#product .product-options.products-options.category-options.product-main-section")
-        if category_element:
-            category_links = category_element.select("a")
-            if category_links:
-                # Зберігаємо вже побачені категорії
-                seen_categories = set()
-                categories = []
-
-                for link in category_links:
-                    category_name = link.get_text(strip=True)
-                    category_prefix = category_name[:3].lower()  # Отримуємо перші три літери (в нижньому регістрі)
-
-                    # Додаємо категорію лише якщо її префікс ще не був доданий
-                    if category_name.lower() not in seen_categories:
-                        # Перевірка на дублювання за словами
-                        duplicate_found = False
-                        for existing_category in seen_categories:
-                            if category_name.lower() in existing_category.lower() or existing_category.lower() in category_name.lower():
-                                duplicate_found = True
-                                break
-                        if not duplicate_found:
-                            categories.append(category_name)
-                            seen_categories.add(category_name.lower())
-
-                category = ", ".join(categories)
-            else:
-                category = category_element.get_text(strip=True).replace("Категорія:", "").strip()
-        else:
-            category = "None"
-
         # Формуємо словник з даними книги
         book_data = {
-            'isbn': isbn if isbn else None,
+            'isbn': isbn if isbn else 'None',
             'author': author if author else 'None',
             'publisher': publisher if publisher else 'None',
             'year': year if year else 'None',
-            'cover_url': cover_url if cover_url else 'None',
-            'category': category if category else 'None',
-            'url': book_url
+            'cover_url': cover_url if cover_url else 'None'
         }
 
         return book_data
-
     else:
         print("Не вдалося знайти необхідні елементи на сторінці книги.")
         return None
@@ -190,11 +155,7 @@ def main():
         book_data = parse_book_data(book_url)
         
         if book_data:
-            # Перевіряємо, чи ISBN існує та чи книга вже є в базі даних
-            if book_data['isbn'] is None:
-                print(f"Книга {book_url} не має ISBN. Пропускаємо.")
-                continue
-
+            # Перевіряємо, чи книга вже є в базі даних
             if is_book_in_db(book_data['isbn']):
                 print(f"Книга з ISBN {book_data['isbn']} вже існує в базі даних. Пропускаємо.")
                 continue

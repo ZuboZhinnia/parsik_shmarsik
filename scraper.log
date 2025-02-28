@@ -1,0 +1,110 @@
+2025-02-27 22:54:01,119 - ERROR - MongoDB URI not found in environment variables
+2025-02-27 22:55:39,444 - INFO - Successfully connected to MongoDB!
+2025-02-27 22:55:39,566 - INFO - ====== WebDriver manager ======
+2025-02-27 22:55:44,005 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-27 22:55:44,159 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-27 22:55:44,312 - INFO - Driver [C:\Users\an_sh\.wdm\drivers\chromedriver\win64\133.0.6943.141\chromedriver-win32/chromedriver.exe] found in cache
+2025-02-27 22:55:45,512 - INFO - Processing publisher: https://www.yakaboo.ua/ua/book_publisher/view/A_ba_ba_ga_la_ma_ga
+2025-02-27 22:55:45,513 - INFO - Navigating to page 1: https://www.yakaboo.ua/ua/book_publisher/view/A_ba_ba_ga_la_ma_ga?page=1
+2025-02-27 22:55:56,231 - INFO - No more books found on page 1, stopping pagination
+2025-02-27 22:55:56,232 - INFO - Total book links collected: 0
+2025-02-27 22:55:56,232 - WARNING - No book links found for publisher: https://www.yakaboo.ua/ua/book_publisher/view/A_ba_ba_ga_la_ma_ga
+2025-02-27 22:55:56,289 - INFO - Exported 10 books to books_data.json
+2025-02-27 22:55:58,525 - INFO - Scraping completed
+2025-02-27 23:00:04,488 - INFO - Successfully connected to MongoDB!
+2025-02-27 23:00:04,594 - INFO - ====== WebDriver manager ======
+2025-02-27 23:00:08,911 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-27 23:00:09,040 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-27 23:00:09,193 - INFO - Driver [C:\Users\an_sh\.wdm\drivers\chromedriver\win64\133.0.6943.141\chromedriver-win32/chromedriver.exe] found in cache
+2025-02-27 23:00:10,398 - INFO - Processing publisher: https://www.yakaboo.ua/ua/book_publisher/view/A_ba_ba_ga_la_ma_ga
+2025-02-27 23:00:10,398 - INFO - Navigating to page 1: https://www.yakaboo.ua/ua/book_publisher/view/A_ba_ba_ga_la_ma_ga?page=1
+2025-02-27 23:00:16,618 - INFO - No more books found on page 1, stopping pagination
+2025-02-27 23:00:16,618 - INFO - Total book links collected: 0
+2025-02-27 23:00:16,620 - WARNING - No book links found for publisher: https://www.yakaboo.ua/ua/book_publisher/view/A_ba_ba_ga_la_ma_ga
+2025-02-27 23:00:18,867 - INFO - Scraping completed
+2025-02-27 23:24:34,356 - INFO - Успішно підключено до MongoDB!
+2025-02-27 23:24:34,431 - INFO - ====== WebDriver manager ======
+2025-02-27 23:24:38,898 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-27 23:24:39,079 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-27 23:24:39,255 - INFO - Driver [C:\Users\an_sh\.wdm\drivers\chromedriver\win64\133.0.6943.141\chromedriver-win32/chromedriver.exe] found in cache
+2025-02-27 23:24:40,509 - INFO - Парсимо 5 книг з першої доступної категорії
+2025-02-27 23:24:40,509 - INFO - Відкриваємо головну сторінку Yakaboo
+2025-02-27 23:24:58,971 - WARNING - Елемент не знайдено: css selector=.header-mobile__nav-btn, Помилка: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00B20B43+25139]
+	(No symbol) [0x00AB13F4]
+	(No symbol) [0x009904E3]
+	(No symbol) [0x009D83D7]
+	(No symbol) [0x009D872B]
+	(No symbol) [0x00A21002]
+	(No symbol) [0x009FD014]
+	(No symbol) [0x00A1E778]
+	(No symbol) [0x009FCDC6]
+	(No symbol) [0x009CBDE9]
+	(No symbol) [0x009CD124]
+	GetHandleVerifier [0x00E24373+3185251]
+	GetHandleVerifier [0x00E4291A+3309578]
+	GetHandleVerifier [0x00E3CF42+3286578]
+	GetHandleVerifier [0x00BB7AE0+643536]
+	(No symbol) [0x00ABA20D]
+	(No symbol) [0x00AB70B8]
+	(No symbol) [0x00AB7257]
+	(No symbol) [0x00AA9E00]
+	BaseThreadInitThunk [0x76D4FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77CA82AE+286]
+	RtlGetAppContainerNamedObjectPath [0x77CA827E+238]
+
+2025-02-27 23:25:09,260 - WARNING - Елемент не знайдено: css selector=a[href*='/ua/books/'], Помилка: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00B20B43+25139]
+	(No symbol) [0x00AB13F4]
+	(No symbol) [0x009904E3]
+	(No symbol) [0x009D83D7]
+	(No symbol) [0x009D872B]
+	(No symbol) [0x00A21002]
+	(No symbol) [0x009FD014]
+	(No symbol) [0x00A1E778]
+	(No symbol) [0x009FCDC6]
+	(No symbol) [0x009CBDE9]
+	(No symbol) [0x009CD124]
+	GetHandleVerifier [0x00E24373+3185251]
+	GetHandleVerifier [0x00E4291A+3309578]
+	GetHandleVerifier [0x00E3CF42+3286578]
+	GetHandleVerifier [0x00BB7AE0+643536]
+	(No symbol) [0x00ABA20D]
+	(No symbol) [0x00AB70B8]
+	(No symbol) [0x00AB7257]
+	(No symbol) [0x00AA9E00]
+	BaseThreadInitThunk [0x76D4FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77CA82AE+286]
+	RtlGetAppContainerNamedObjectPath [0x77CA827E+238]
+
+2025-02-27 23:25:09,261 - WARNING - Не вдалося знайти категорію книг, спробуємо прямий URL
+2025-02-27 23:25:27,778 - ERROR - Помилка при пошуку книг у категорії: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00B20B43+25139]
+	(No symbol) [0x00AB13F4]
+	(No symbol) [0x009904E3]
+	(No symbol) [0x009D83D7]
+	(No symbol) [0x009D872B]
+	(No symbol) [0x00A21002]
+	(No symbol) [0x009FD014]
+	(No symbol) [0x00A1E778]
+	(No symbol) [0x009FCDC6]
+	(No symbol) [0x009CBDE9]
+	(No symbol) [0x009CD124]
+	GetHandleVerifier [0x00E24373+3185251]
+	GetHandleVerifier [0x00E4291A+3309578]
+	GetHandleVerifier [0x00E3CF42+3286578]
+	GetHandleVerifier [0x00BB7AE0+643536]
+	(No symbol) [0x00ABA20D]
+	(No symbol) [0x00AB70B8]
+	(No symbol) [0x00AB7257]
+	(No symbol) [0x00AA9E00]
+	BaseThreadInitThunk [0x76D4FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77CA82AE+286]
+	RtlGetAppContainerNamedObjectPath [0x77CA827E+238]
+
+2025-02-27 23:25:27,779 - INFO - Зібрано посилань на книги: 0
+2025-02-27 23:25:27,782 - WARNING - Не знайдено посилань на книги
+2025-02-27 23:25:30,059 - INFO - Парсинг завершено
